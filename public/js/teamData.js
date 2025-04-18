@@ -5,7 +5,7 @@ const teams = {
       { name: "Somnath Laha", image: "public/images/t-a/somnath.jpg" },
       { name: "Subrata Haldar", image: "public/images/t-a/subrata.jpg" },
       { name: "Asim Roy", image: "public/images/t-a/asim.jpg" },
-      { name: "Ankit", image: "public/images/t-a/ankit.jpg" },
+      { name: "Ankit Basu", image: "public/images/t-a/ankit.jpg" },
       { name: "Arya Dey", image: "public/images/t-a/arya.jpg" },
       { name: "Bishal Das", image: "public/images/t-a/bishal.jpg" },
       { name: "Babin Koley", image: "public/images/t-a/babin.jpg" },
@@ -39,4 +39,3 @@ const teams = {
       // ...
     ]
   };
-  
