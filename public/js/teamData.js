@@ -10,6 +10,7 @@ const teams = {
       { name: "Bishal Das", image: "public/images/t-a/bishal.jpg" },
       { name: "Babin Koley", image: "public/images/t-a/babin.jpg" },
       { name: "Rohan Chakrabarty", image: "public/images/t-a/rohan.jpg" },
+      { name: "Prasanna Saha", image: "public/images/t-a/prasanna.jpg" },
       // ...up to 10
     ],
     "Team B": [
@@ -23,6 +24,7 @@ const teams = {
       { name: "Netray Goswami", image: "public/images/t-b/netray.jpg" },
       { name: "Dev Haldar", image: "public/images/t-b/dev.webp" },
       { name: "Subhojit Deb Roy", image: "public/images/t-b/subhojit.jpg" },
+      { name: "Raja", image: "public/images/t-b/raja.jpg" },
       // ...
     ],
     "Team C": [
@@ -36,6 +38,7 @@ const teams = {
       { name: "Kaustav Mitra", image: "public/images/t-c/kaustav.jpg" },
       { name: "Soumyadip Das", image: "public/images/t-c/soumyadip.jpg" },
       { name: "Arnab Chakrabarty", image: "public/images/t-c/arnab.jpg" },
+      { name: "Nilajeet Basak", image: "public/images/t-c/nilajeet.png" },
       // ...
     ]
   };
