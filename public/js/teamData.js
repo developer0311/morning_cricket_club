@@ -1,6 +1,6 @@
 const teams = {
     "Team A": [
-      { name: "Tapas Das (<em>Captain</em>)", image: "public/images/t-a/" },
+      { name: "Tapas Das (<em>Captain</em>)", image: "public/images/t-a/tapas.jpg" },
       { name: "Samrat Mandal", image: "public/images/t-a/samrat.jpg" },
       { name: "Somnath Laha", image: "public/images/t-a/somnath.jpg" },
       { name: "Subrata Haldar", image: "public/images/t-a/subrata.jpg" },
