@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cardBody.appendChild(title);
 
       // Champion team info
-      if (key === "Champion Team Name") {
+      if (key === "🎊 Champion Team Name 🎊") {
         const teamInfo = document.createElement("p");
         teamInfo.classList.add("card-text");
         teamInfo.innerHTML = `Champion: ${highlight.name}`;
