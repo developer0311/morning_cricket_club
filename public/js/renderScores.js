@@ -12,7 +12,8 @@ matches.forEach(match => {
       <td>${scoreText}</td>
       <td>${winnerText}</td>
       <td>${wonByText}</td>
-      <td>${match.net_run_rate}</td>
-    </tr>
-  `;
-});
+      </tr>
+      `;
+    });
+    
+    // <td>${match.net_run_rate}</td>
