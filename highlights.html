@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Highlights | MORNING Cricket League</title>
+    <title>Highlights | MORNING Cricket Club</title>
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/style.css" />
@@ -23,6 +24,7 @@
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
                     <li class="nav-item"><a class="nav-link" href="scoreboard.html">Score Board</a></li>
                     <li class="nav-item"><a class="nav-link active" href="highlights.html">Highlights</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -31,11 +33,18 @@
         </div>
     </nav>
 
-    <!-- Highlights Section -->
-    <div class="container my-5">
-        <h2 class="text-center mb-5">Tournament Highlights</h2>
-        <div id="highlightContainer"></div>
+    <div class="sound-button">
+        <img src="public/images/logo-2.jpg" alt="Play Sound" srcset="" title="Click Here">
     </div>
+
+    <!-- Highlights Section -->
+    <main>
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Tournament Highlights</h2>
+            <p class="text-center">Tournament Not Finished Yet</p>
+            <div id="highlightContainer"></div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -43,6 +52,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="public/js/script.js"></script>
     <script src="public/js/highlightsData.js"></script>
     <script src="public/js/renderHighlights.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

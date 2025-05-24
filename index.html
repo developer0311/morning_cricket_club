@@ -4,15 +4,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MORNING Cricket League</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/style.css">
+    <title>Home | MORNING Cricket Club</title>
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <style>
+        /* Fullscreen overlay with blur */
+        #heartbeat-splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(2px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        #heartbeat-splash img {
+            width: 200px;
+            animation: heartbeat 1s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.1);
+            }
+
+            50% {
+                transform: scale(0.95);
+            }
+
+            75% {
+                transform: scale(1.05);
+            }
+        }
+
+        #heartbeat-splash.fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Heartbeat splash -->
+    <div id="heartbeat-splash">
+        <img src="public/images/season_2_logo.png" alt="Season 2 Logo">
+    </div>
 
-    <!-- Navbar -->
+    <!-- Real page content (immediately visible, just blurred initially) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">MCL Trophy 2025</a>
@@ -22,6 +74,7 @@
             <div class="collapse navbar-collapse" id="navLinks">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
                     <li class="nav-item"><a class="nav-link" href="scoreboard.html">Score Board</a></li>
                     <li class="nav-item"><a class="nav-link" href="highlights.html">Highlights</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -30,25 +83,58 @@
         </div>
     </nav>
 
-    <main>
+    <div class="sound-button">
+        <img src="public/images/logo-2.jpg" alt="Play Sound" srcset="" title="Click Here">
+    </div>
 
+    <main>
         <!-- Team Sections -->
         <div class="container py-5">
-            <h1 class="text-center mb-4">Morning Cricket League 2025 (Season 1)</h1>
-            <h3 class="text-center mb-4">Meet the Teams</h3>
-            <div id="teamsContainer"></div>
+            <h1 class="text-center mb-4">M.C.C.L Trophy Season 2 is Here!</h1>
         </div>
+        <div class="content container py-5">
+            <p class="lead">Get ready for the most thrilling cricket tournament of the year.</p>
+            <p><strong>📅 Date:</strong> May 25, 2025, 5 p.m onwards </p>
+            <div class="venue">
+                <p><strong>📍 Location:</strong> Rani Rashmoni More Playground, Sodepur, Kolkata- 700110</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d393.39289778562915!2d88.38444819385529!3d22.707893130112105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89b0010d907fb%3A0x20e5a6924ffa9a54!2sRashmoni%20more%20playground!5e1!3m2!1sen!2sin!4v1748105403637!5m2!1sen!2sin"
+                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <a href="teams.html" class="btn btn-primary btn-lg px-4 shadow"
+                style="border-radius: 50px; font-weight: 600;">
+                Meet Our Teams
+            </a>
+        </div>
+
+
     </main>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         &copy; MORNING Cricket League | @developer0311 | All Rights Reserved
     </footer>
 
+
     <!-- Scripts -->
+    <script src="public/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="public/js/teamData.js"></script>
-    <script src="public/js/renderTeams.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                const splash = document.getElementById("heartbeat-splash");
+                splash.classList.add("fade-out");
+                setTimeout(() => splash.style.display = "none", 500);
+            }, 2500);
+        });
+
+    </script>
+
+
+    </script>
 </body>
 
 </html>

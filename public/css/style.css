@@ -14,6 +14,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* ========================== BASICS ========================== */
+
 h1 {
   font-family: "Sacramento", cursive;
   color: #6c5ce7;
@@ -38,6 +40,32 @@ input {
   font-family: "Sanchez", serif;
 }
 
+.sound-button {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 5px rgb(92, 163, 255);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sound-button:hover{
+  scale: 1.1;
+}
+
+.sound-button img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+
 main {
   min-height: calc(100vh - 72px - 56px);
 }
@@ -46,6 +74,16 @@ main {
   height: 150px;
   object-fit: contain;
 } */
+
+/* ========================== INDEX.html ========================== */
+
+.map{
+  height: 50%;
+  width: 100%;
+}
+
+
+/* ========================== TEAMS.html ========================== */
 
 .card-img {
   width: 100%;
@@ -61,12 +99,6 @@ main {
   height: 150px; /* Smaller image height */
   object-fit: contain;
   object-position: center;
-}
-
-@media only screen and (max-width: 500px) {
-  html {
-    font-size: 70%;
-  }
 }
 
 .highlight-card {
@@ -91,4 +123,20 @@ main {
   font-weight: bold;
   border-bottom: 2px solid #000;
   padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  main {
+    min-height: calc(100vh - 72px - 16px);
+  }
+
+  .sound-button {
+    right: 20px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+  }
 }
