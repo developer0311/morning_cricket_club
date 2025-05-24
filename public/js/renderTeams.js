@@ -20,7 +20,7 @@ Object.keys(teams).forEach((team, index) => {
     .join("");
 
   teamsContainer.innerHTML += `
-    <h4 class="mt-5">${team}</h4>
+    <h3 class="mt-5">${team}</h3>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
       ${cards}
     </div>
