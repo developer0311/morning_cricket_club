@@ -46,7 +46,7 @@ const matches = [
     net_run_rate: "Match not done yet",
   },
   {
-    match_no: "5",
+    match_no: "6",
     teams: [
       "<strong>Group League First</strong>",
       "<strong>Group League Second</strong>",
